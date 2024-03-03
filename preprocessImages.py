@@ -3,16 +3,14 @@ import numpy as np
 import cv2
 import os
 
-
 # Function to preprocess image
-def preprocess_image(image_path, target_size=(228, 228)):
+def preprocess_image(image_path, target_size=(300, 300)):
     img = cv2.imread(image_path)
     gray_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     img_resized = cv2.resize(gray_img, target_size)
     img_flattened = img_resized.flatten()
     img_normalized = img_flattened.astype("float32") / 255.0
     return img_normalized
-
 
 def preprocess_data():
     # Load and preprocess train and test data
@@ -37,7 +35,7 @@ def preprocess_data():
             test_filepaths.append(filepath)
             test_labels.append(label)
 
-    target_size = (228, 228)
+    target_size = (300, 300)
     x_train = np.array([preprocess_image(filepath, target_size) for filepath in train_filepaths])
     y_train = np.array(train_labels)
     x_test = np.array([preprocess_image(filepath, target_size) for filepath in test_filepaths])
