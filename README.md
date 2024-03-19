@@ -10,7 +10,11 @@ The classification of chest X-ray images is crucial in diagnosing respiratory di
 
 ## Results
 
-The CNN model achieved an impressive accuracy of 95.45% on the test set, outperforming traditional machine learning methods. Through systematic experimentation, we identified key factors affecting model performance and emphasized the effectiveness of CNN models in classifying chest X-ray images.
+The CNN model achieved an impressive accuracy of 96.96% on the test set, outperforming traditional machine learning methods. Through systematic experimentation, we identified key factors affecting model performance and emphasized the effectiveness of CNN models in classifying chest X-ray images.
+
+![image](https://github.com/ohadwolfman/Covid-19_chest_Xray_classification/assets/99247120/454ec809-d6be-4d2e-950e-e3a5ae4edc1c)
+![image](https://github.com/ohadwolfman/Covid-19_chest_Xray_classification/assets/99247120/f71f6916-7152-43dd-b430-ce3faa4137db) ![image](https://github.com/ohadwolfman/Covid-19_chest_Xray_classification/assets/99247120/ce1cfc61-3bbb-481f-b4e7-0d07874d2013)
+
 
 ## License
 
